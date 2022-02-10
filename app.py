@@ -17,7 +17,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return render_template('web.html',test1=storage.child(cloudfilename).get_url(None))
+    return render_template('web.html',test1="123")
 
 if __name__ == '__main__':
     app.run(debug=True, use_reloader=True)
