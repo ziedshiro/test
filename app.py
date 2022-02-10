@@ -17,7 +17,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return render_template('web.html',test1=storage.child("1.png").get_url(None))
+    return render_template('web.html',test1="123",test2=storage.child("1.png").get_url(None))
 
 if __name__ == '__main__':
     app.run(debug=True, use_reloader=True)
